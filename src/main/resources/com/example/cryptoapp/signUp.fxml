@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cryptoapp.SignUpController">
+   <children>
+      <Label layoutX="156.0" layoutY="28.0" prefHeight="51.0" prefWidth="99.0" text="Sign up">
+         <font>
+            <Font name="Candara Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" alignment="TOP_LEFT" layoutX="126.0" layoutY="121.0" promptText="Username" />
+      <Button fx:id="saveButton" layoutX="142.0" layoutY="251.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="25.0" prefWidth="115.0" text="Save" />
+      <Label layoutX="129.0" layoutY="104.0" text="Username" />
+      <Label layoutX="131.0" layoutY="155.0" text="Password" />
+      <Button fx:id="signInButton" disable="true" layoutX="143.0" layoutY="291.0" mnemonicParsing="false" onAction="#signInButtonClicked" prefHeight="25.0" prefWidth="115.0" text="Sign in" />
+      <Label fx:id="textLabel" layoutX="109.0" layoutY="221.0" prefHeight="17.0" prefWidth="194.0" textAlignment="CENTER" textFill="#f40606" />
+      <PasswordField fx:id="passwordField" layoutX="126.0" layoutY="175.0" promptText="Password" />
+      <Button fx:id="btnClose" layoutX="143.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnCloseClicked" prefHeight="25.0" prefWidth="115.0" text="Close" />
+   </children>
+</Pane>

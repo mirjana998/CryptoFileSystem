@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cryptoapp.WelcomeController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #AA96DA;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="367.0" prefHeight="18.0" prefWidth="178.0" text="Elektrotehnicki fakultet, Banja Luka 2023" textFill="#0d0000">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="134.0" prefHeight="74.0" prefWidth="146.0" text="CRYPTOAPP">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f4fdff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="157.0" layoutY="52.0" prefHeight="74.0" prefWidth="86.0" text="Welcome!">
+               <font>
+                  <Font name="Gill Sans MT" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="signInButton" layoutX="243.0" layoutY="201.0" mnemonicParsing="false" onAction="#signInButtonOnAction" prefHeight="26.0" prefWidth="99.0" text="Sign in" />
+            <Button fx:id="signUpButton" layoutX="243.0" layoutY="257.0" mnemonicParsing="false" onAction="#signUpButtonOnAction" prefHeight="26.0" prefWidth="99.0" text="Sign up" />
+            <Label layoutX="49.0" layoutY="205.0" prefHeight="18.0" prefWidth="170.0" text="If you already have account" />
+            <Label layoutX="49.0" layoutY="261.0" prefHeight="18.0" prefWidth="150.0" text="If you are new to this app" />
+            <Button fx:id="btnClose" layoutX="245.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnCloseClicked" prefHeight="26.0" prefWidth="96.0" text="Close" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cryptoapp.SignInDSController">
+   <children>
+      <PasswordField fx:id="txtPassword" disable="true" layoutX="302.0" layoutY="234.0" prefHeight="26.0" prefWidth="178.0" promptText="Password" />
+      <Label layoutX="57.0" layoutY="26.0" prefHeight="46.0" prefWidth="150.0" text="Digital Certificate">
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnInsert" layoutX="88.0" layoutY="177.0" mnemonicParsing="false" onAction="#btnInsertClicked" prefHeight="26.0" prefWidth="87.0" text="Insert" />
+      <Button fx:id="btnNextCert" disable="true" layoutX="88.0" layoutY="234.0" mnemonicParsing="false" onAction="#btnNextCertClicked" prefHeight="26.0" prefWidth="87.0" text="Next" />
+      <Label fx:id="lblMsgCert" layoutX="32.0" layoutY="82.0" prefHeight="22.0" prefWidth="199.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Line endX="-99.99996948242188" endY="328.4000244140625" layoutX="353.0" layoutY="38.0" startX="-99.99998474121094" startY="-18.800012588500977" />
+      <Label layoutX="292.0" layoutY="32.0" prefHeight="34.0" prefWidth="199.0" text="Username and password">
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" alignment="TOP_LEFT" disable="true" layoutX="302.0" layoutY="179.0" prefHeight="26.0" prefWidth="177.0" promptText="Username" />
+      <Button fx:id="btnLogin" disable="true" layoutX="273.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnLoginClicked" prefHeight="26.0" prefWidth="87.0" text="Log in" />
+      <Label fx:id="lblMsgUser" layoutX="281.0" layoutY="74.0" prefHeight="93.0" prefWidth="222.0" textAlignment="CENTER" textFill="#ec0d0d" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ListView fx:id="listView" layoutX="526.0" layoutY="63.0" onMouseClicked="#listViewSelectedFile" prefHeight="170.0" prefWidth="266.0" />
+      <Line endX="-100.0" endY="323.5999755859375" layoutX="625.0" layoutY="38.0" startX="-99.99998474121094" startY="-18.800012588500977" />
+      <Button fx:id="btnUpload" disable="true" layoutX="541.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnUploadClicked" prefHeight="26.0" prefWidth="94.0" text="Upload" />
+      <Button fx:id="btnShow" disable="true" layoutX="684.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnShowClicked" prefHeight="26.0" prefWidth="94.0" text="Show" />
+      <Button fx:id="btnNextUsr" disable="true" layoutX="403.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnNextUsrClicked" prefHeight="26.0" prefWidth="87.0" text="Next" />
+      <Label layoutX="592.0" layoutY="38.0" prefHeight="22.0" prefWidth="131.0" text="User interface" textAlignment="CENTER">
+         <font>
+            <Font name="Candara Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMsgVerify" layoutX="33.0" layoutY="104.0" prefHeight="34.0" prefWidth="199.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMsgFile" layoutX="541.0" layoutY="247.0" prefHeight="34.0" prefWidth="234.0" textAlignment="CENTER" textFill="#ea1212" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClose" layoutX="88.0" layoutY="289.0" mnemonicParsing="false" onAction="#btnCloseClicked" prefHeight="26.0" prefWidth="87.0" text="Close" />
+   </children>
+</AnchorPane>
